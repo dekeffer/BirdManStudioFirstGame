@@ -91,3 +91,9 @@ end
         composer.gotoScene("tikkenteller")
     end)
 end
+
+end
+
+scene.addEventListener("create", scene)
+
+return scene

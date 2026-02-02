@@ -10,8 +10,12 @@ function scene:create(event)
     sceneGroup:insert(Logo)
     print( "Delay gelukt" )
     composer.gotoScene("menu")
-end
-end
+    end
   
 timer.performWithDelay( 1000, listener )
     
+    end
+
+scene.addEventListener("create", scene)
+
+return scene
