@@ -24,30 +24,70 @@ function scene:create(event)
     Story1:setFillColor(0, 0, 255)
     sceneGroup:insert(Story1)
 
+    Story1:addEventListener("tap", function()
+        composer.gotoScene("Story1Scene1")
+    end)
+end
+
     local Story2 = display.newCircle( 125, 150, 25 )
     Story2:setFillColor(0, 0, 255)
     sceneGroup:insert(Story2)
+
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
 
     local Story3 = display.newCircle( 175, 150, 25 )
     Story3:setFillColor(0, 0, 255)
     sceneGroup:insert(Story3)
 
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
+
     local Story4 = display.newCircle( 225, 150, 25 )
     Story4:setFillColor(0, 0, 255)
     sceneGroup:insert(Story4)
+
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
 
     local Story5 = display.newCircle( 75, 250, 25 )
     Story5:setFillColor(0, 0, 255)
     sceneGroup:insert(Story5)
 
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
+
     local Story6 = display.newCircle( 125, 250, 25 )
     Story6:setFillColor(0, 0, 255)
     sceneGroup:insert(Story6)
+
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
 
     local Story7 = display.newCircle( 175, 250, 25 )
     Story7:setFillColor(0, 0, 255)
     sceneGroup:insert(Story7)
 
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
+
     local Story8 = display.newCircle( 225, 250, 25 )
     Story8:setFillColor(0, 0, 255)
     sceneGroup:insert(Story8)
+
+    knop2:addEventListener("tap", function()
+        composer.gotoScene("tikkenteller")
+    end)
+end
