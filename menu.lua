@@ -1,17 +1,34 @@
 local composer = require("composer")
 local scene = composer.newScene()
-local graphics = require("graphics")
-print("menu.lua")
 
-local function Startlevel1(event)
-    composer.gotoScene("Win")
-end
 function scene:create(event)
     local sceneGroup = self.view
-    local levelEenBut = display.newRect(display.contentCenterX, display.contentCenterY, 200, 200)
-    levelEenBut:addEventListener("touch", Startlevel1)
-    sceneGroup:insert( levelEenBut )
+
+    local title = display.newText({
+        text = "Appleman Legends",
+        x = display.contentCenterX,
+        y = 50,
+        fontSize = 35
+    })
+    sceneGroup:insert(title)
+
+    local title2 = display.newText({
+        text = "choose your story",
+        x = display.contentCenterX,
+        y = 100,
+        fontSize = 30
+    })
+    sceneGroup:insert(title)
+
+    local Story1 = display.newCircle( 75, 150, 25 )
+    Story1:setFillColor(0, 0, 255)
+    sceneGroup:insert(Story1)
+
+    Story1:addEventListener("tap", function()
+        composer.gotoScene("Win")
+    end)
 end
 
-scene:addEventListener("create", scene)
+scene.addEventListener("create", scene)
+
 return scene
