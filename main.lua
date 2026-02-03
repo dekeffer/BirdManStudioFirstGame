@@ -1,6 +1,7 @@
-print("Main")
+display.setStatusBar(display.HiddenStatusBar)
+
 local composer = require("composer")
 
-composer.gotoScene("Studio")
+print ("main.lua")
 
-return scene
+composer.gotoScene("menu")
