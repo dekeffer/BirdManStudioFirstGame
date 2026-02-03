@@ -15,7 +15,7 @@ function scene:create(event)
     local choicebb = display.newRect (400, 100, 50 , 50)
     choicebb:setFillColor(0, 0, 1)
     local function Win(event)
-        composer.gotoScene(RoughCut)
+        composer.gotoScene("RoughCut")
     end
     choicevv:addEventListener("touch", Win)
 
