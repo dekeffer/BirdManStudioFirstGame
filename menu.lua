@@ -27,7 +27,6 @@ function scene:create(event)
     Story1:addEventListener("tap", function()
         composer.gotoScene("Story1Scene1")
     end)
-end
 
     local Story2 = display.newCircle( 125, 150, 25 )
     Story2:setFillColor(0, 0, 255)
@@ -36,7 +35,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story3 = display.newCircle( 175, 150, 25 )
     Story3:setFillColor(0, 0, 255)
@@ -45,7 +43,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story4 = display.newCircle( 225, 150, 25 )
     Story4:setFillColor(0, 0, 255)
@@ -54,7 +51,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story5 = display.newCircle( 75, 250, 25 )
     Story5:setFillColor(0, 0, 255)
@@ -63,7 +59,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story6 = display.newCircle( 125, 250, 25 )
     Story6:setFillColor(0, 0, 255)
@@ -72,7 +67,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story7 = display.newCircle( 175, 250, 25 )
     Story7:setFillColor(0, 0, 255)
@@ -81,7 +75,6 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
     local Story8 = display.newCircle( 225, 250, 25 )
     Story8:setFillColor(0, 0, 255)
@@ -90,10 +83,9 @@ end
     knop2:addEventListener("tap", function()
         composer.gotoScene("tikkenteller")
     end)
-end
 
 end
 
-scene.addEventListener("create", scene)
+scene:addEventListener("create", scene)
 
 return scene
