@@ -18,7 +18,7 @@ function scene:create(event)
         y = 100,
         fontSize = 30
     })
-    sceneGroup:insert(title)
+    sceneGroup:insert(title2)
 
     local Story1 = display.newCircle( 75, 150, 25 )
     Story1:setFillColor(0, 0, 255)

@@ -7,8 +7,7 @@ print("Win.lua")
 
 function scene:create(event)
     sceneGroup = self.view
-    local choice1 = display.newImage("images/pick.jpg", display.contentCenterX, display.contentCenterY)
-    sceneGroup:insert(choice1)
+    local choice1 = display.newImage( sceneGroup, "images/pick.jpg", display.contentCenterX, display.contentCenterY)
     local choicevv = display.newRect(100, 100, 50, 50)
     choicevv:setFillColor(0, 1, 0)
     sceneGroup:insert(choicevv)
@@ -22,7 +21,7 @@ function scene:create(event)
         composer.gotoScene("G1C1-2")
     end
     choicevv:addEventListener("touch", Win)
-    choicevv:addEventListener("touch", Lose)
+    choicebb:addEventListener("touch", Lose)
 
 end
 scene:addEventListener("create", scene)

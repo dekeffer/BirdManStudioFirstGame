@@ -1,6 +1,5 @@
 local composer = require("composer")
 local scene = composer.newScene()
-local graphics = require("graphics")
 
 print("G1C1-1")
 
