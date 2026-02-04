@@ -30,6 +30,26 @@ function scene:create(event)
             cheese.isVisible = false
         end
     end
+        local counter = 10
+    local message = display.newText(
+        "Timer: " .. counter,
+        display.contentCenterX-10,
+        display.contentCenterY-10 + 50, 
+        native.systemFont,
+        20)
+        sceneGroup:insert(message)
+
+    timer.performWithDelay( 1000, function()
+        if counter > 0 then
+            counter = counter - 1
+            message.text = tostring(counter)
+        else 
+            composer.gotoScene("Dead")
+        end
+    end, 11)
+
+
+    
     local function Win(event)
         composer.gotoScene("G1C1-1")
     end
