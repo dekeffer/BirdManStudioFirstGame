@@ -18,17 +18,17 @@ function scene:create(event)
         y = 100,
         fontSize = 30
     })
-    sceneGroup:insert(title)
+    sceneGroup:insert(title2)
 
     local Story1 = display.newCircle( 75, 150, 25 )
     Story1:setFillColor(0, 0, 255)
     sceneGroup:insert(Story1)
 
     Story1:addEventListener("tap", function()
-        composer.gotoScene("Win")
+        composer.gotoScene("G1K1")
     end)
 end
 
-scene.addEventListener("create", scene)
+scene:addEventListener("create", scene)
 
 return scene
