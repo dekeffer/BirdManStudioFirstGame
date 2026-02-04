@@ -10,6 +10,8 @@ function scene:create(event)
     sceneGroup:insert(TEXT)
     local TEXT1 = display.newText("Made by: Birdman Studio", display.contentCenterX, display.contentCenterY-100, native.systemFont, 20 )
     sceneGroup:insert(TEXT1)
+    local eScore = display.newText( "Your score : " .. score, display.contentCenterX, display.contentCenterY+100, native.systemFont, 30 )
+    sceneGroup:insert(eScore)
     local function Win(event)
         composer.gotoScene("menu")
     end

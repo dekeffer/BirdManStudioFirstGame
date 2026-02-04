@@ -8,8 +8,11 @@ function scene:create(event)
     sceneGroup:insert(choicevv)
     local TEXT = display.newText( "You Win", display.contentCenterX, display.contentCenterY, native.systemFont, 30 )
     sceneGroup:insert(TEXT)
+    local eScore = display.newText( "Your score : " .. score, display.contentCenterX, display.contentCenterY-100, native.systemFont, 30 )
+    sceneGroup:insert(eScore)
     local function Win(event)
         composer.gotoScene("menu")
+        score = 0
     end
     choicevv:addEventListener("touch", Win)
 
