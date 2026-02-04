@@ -25,10 +25,10 @@ function scene:create(event)
     sceneGroup:insert(Story1)
 
     Story1:addEventListener("tap", function()
-        composer.gotoScene("Win")
+        composer.gotoScene("G1K1")
     end)
 end
 
-scene.addEventListener("create", scene)
+scene:addEventListener("create", scene)
 
 return scene
