@@ -52,9 +52,13 @@ function scene:create(event)
     
     local function Win(event)
         composer.gotoScene("G1C1-1")
+        score = 1
+        counter = 9999999999999999999999999
     end
     local function Lose(event)
         composer.gotoScene("G1C1-2")
+        score = 1
+        counter = 9999999999999999999999999
     end
     choicevv:addEventListener("touch", Win)
     choicebb:addEventListener("touch", Lose)
